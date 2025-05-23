@@ -3,6 +3,7 @@ import React from 'react'
 import { useLocalSearchParams } from 'expo-router'
 import phones from '@/lib/data/phones'
 import { ThemedText } from '@/components/ThemedText'
+import { addToCart } from '@/lib/data/cart'
 
 const ItemPage = () => {
   const  { id } = useLocalSearchParams()
@@ -19,7 +20,7 @@ const ItemPage = () => {
         <ThemedText style={{ fontSize: 16,  fontWeight: 'bold' }}>{itemDetails.brand}</ThemedText>
         <ThemedText style={{ fontSize: 16,  fontWeight: '200' }}>{itemDetails.description}</ThemedText>
 
-        <TouchableWithoutFeedback onPress={() => console.log('Add to Cart')}>
+        <TouchableWithoutFeedback onPress={() => addToCart(itemDetails)}>
           <View style={{ backgroundColor: '#2E8B57', padding: 10, borderRadius: 5, marginTop: 20 }}>
             <ThemedText style={{ color: '#fff', textAlign: 'center' }}>Add to Cart</ThemedText>
           </View>
