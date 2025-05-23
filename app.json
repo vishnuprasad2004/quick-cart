@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "quick-cart",
+    "name": "Quick Cart",
     "slug": "quick-cart",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,11 +12,8 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vishnuprasadkorada.quickcart"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +34,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d5486d29-9199-4efb-9390-9b1f0644a7a6"
+      }
     }
   }
 }
